@@ -1,0 +1,9 @@
+{
+  "name": "com.nexus.nodejs",
+  "description": "Run Node.JS",
+  "path": "./index.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://igfnejdljeikiglblhkeoiphpgknnpcn/"
+  ]
+}

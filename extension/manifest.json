@@ -1,0 +1,29 @@
+{
+  "name": "Communicating",
+  "version": "1.0",
+  "description": "Recieve NodeJS application message",
+  "manifest_version": 3,
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "bookmarks",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "icons": {
+    "128": "logo.png"
+  },
+  "offline_enabled": true,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
